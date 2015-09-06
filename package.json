@@ -1,0 +1,11 @@
+{
+  "name": "react-coast",
+  "description": "React COAST - React COmponents And Sensible Templates",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stockwatcher/react-coast.git"
+  },
+  "dependencies": {
+  }
+}
