@@ -1,0 +1,21 @@
+
+@import 'common';
+
+html, body {
+  height: 100%;
+  position: relative;
+  margin: 0;
+}
+
+.rc-footer {
+  background: #eee;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 4px #888;
+  font-size: 10px;
+  box-sizing: border-box;
+  height: 46px;
+  padding: 10px;
+}
+

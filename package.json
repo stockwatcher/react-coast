@@ -7,5 +7,8 @@
     "url": "git://github.com/stockwatcher/react-coast.git"
   },
   "dependencies": {
+    "express": "4.x",
+    "react": "*",
+    "palette-css": "git://github.com/stockwatcher/palette-css.git#master"
   }
 }
