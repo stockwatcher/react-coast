@@ -9,6 +9,8 @@
   "dependencies": {
     "express": "4.x",
     "react": "*",
+    "jquery": "2.x",
+    "materialize-css": "git://github.com/Dogfalo/materialize.git#v0.97.0",
     "palette-css": "git://github.com/stockwatcher/palette-css.git#master"
   }
 }

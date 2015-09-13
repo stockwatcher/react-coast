@@ -1,0 +1,8 @@
+
+@import 'common';
+
+.rc-button {
+  @extend .btn;
+  text-transform: none;
+}
+

@@ -1,0 +1,16 @@
+
+@import 'common';
+
+.confirm-modal{
+  @extend .modal;
+}
+
+.modal-footer {
+  .submit-button {
+    @extend .btn-flat;
+  }
+
+  .close-button {
+    @extend .btn-flat;
+  }
+}
