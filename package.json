@@ -1,14 +1,14 @@
 {
   "name": "react-coast",
   "description": "React COAST - React COmponents And Sensible Templates",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "git://github.com/stockwatcher/react-coast.git"
   },
   "dependencies": {
     "express": "4.x",
-    "react": "*",
+    "react": "0.13.x",
     "jquery": "2.x",
     "materialize-css": "git://github.com/Dogfalo/materialize.git#v0.97.0",
     "palette-css": "git://github.com/stockwatcher/palette-css.git#master"

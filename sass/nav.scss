@@ -1,8 +1,13 @@
 
 @import 'common';
 
-html, body {
+html {
   height: 100%;
+  position: relative;
+  margin: 0;
+}
+body {
+  min-height: 100%;
   position: relative;
   margin: 0;
 }
