@@ -1,5 +1,5 @@
 
-var RcFooter = React.createClass({
+window.RcFooter = React.createClass({
   render: function() {
     return (
       <div className="rc-footer">

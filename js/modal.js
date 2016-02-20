@@ -31,7 +31,7 @@ var BaseModalMixin = {
   },
   _updateModal: function() {
     var self = this,
-        $element = $(React.findDOMNode(this));
+        $element = $(ReactDOM.findDOMNode(this));
     if (self.state.visible) {
       $element.openModal({
         complete: function() {
@@ -66,7 +66,7 @@ var BaseModalMixin = {
  * @prop texts: (see BasicConfirmModalContent)
  * @prop next(): (see BasicConfirmModalContent)
  */
-var BasicConfirmModal = React.createClass({
+window.BasicConfirmModal = React.createClass({
   mixins: [BaseModalMixin],
   onClose: function() {
     // Do nothing
@@ -91,7 +91,7 @@ var BasicConfirmModal = React.createClass({
  * }
  * @prop next(): Function to execute on submit.
  */
-var BasicConfirmModalContent = React.createClass({
+window.BasicConfirmModalContent = React.createClass({
   handleSubmit: function(event) {
     event.preventDefault();
     this.props.modal.close();
@@ -120,7 +120,7 @@ var BasicConfirmModalContent = React.createClass({
  * @prop closeText: string
  * @prop onClose: callback after close
  */
-var BasicModalFooter = React.createClass({
+window.BasicModalFooter = React.createClass({
   render: function() {
     return (
       <div className="modal-footer">

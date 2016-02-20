@@ -35,7 +35,7 @@ var TestButton = React.createClass({
   }
 });
 
-React.render(
+ReactDOM.render(
   <div>
     <TestButtons />
     <RcFooter />

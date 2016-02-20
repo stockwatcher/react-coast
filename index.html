@@ -4,11 +4,9 @@
   <title>React COAST Test Page</title>
   <script src="/node_modules/jquery/dist/jquery.js"></script>
   <script src="/node_modules/react/dist/react.js"></script>
-  <script src="/node_modules/react/dist/JSXTransformer.js"></script>
+  <script src="/node_modules/react-dom/dist/react-dom.js"></script>
+  <script src="/node_modules/babel-core/browser.js"></script>
   <script src="/node_modules/materialize-css/dist/js/materialize.js"></script>
-  <script type="text/jsx" src="/react-coast/js/nav.js"></script>
-  <script type="text/jsx" src="/react-coast/js/modal.js"></script>
-  <script type="text/jsx" src="/render_index.js"></script>
   <link rel="stylesheet" href="/palette/palette.css">
   <link rel="stylesheet" href="/react-coast/css/nav.css">
   <link rel="stylesheet" href="/react-coast/css/button.css">
@@ -17,6 +15,9 @@
 </head>
 <body>
   <div id="container"></div>
+  <script type="text/babel" src="/react-coast/js/nav.js"></script>
+  <script type="text/babel" src="/react-coast/js/modal.js"></script>
+  <script type="text/babel" src="/render_index.js"></script>
 </body>
 </html>
 

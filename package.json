@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "express": "4.x",
-    "react": "0.13.x",
+    "react": "0.14.x",
+    "react-dom": "0.14.x",
+    "babel-core": "5.x",
     "jquery": "2.x",
     "materialize-css": "git://github.com/Dogfalo/materialize.git#v0.97.0",
     "palette-css": "git://github.com/stockwatcher/palette-css.git#master"
