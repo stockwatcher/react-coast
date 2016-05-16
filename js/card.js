@@ -19,7 +19,7 @@ window.RcCard = React.createClass({
   render: function() {
     var containerClasses = 'rc-card-container ' + this.props.className;
     var height = this.props.height || "100";
-    var innerClasses = this.props.innerClasses || "padding-normal";
+    var innerClasses = this.props.innerClasses || "rc-padding-normal";
     return (
       <div className={containerClasses}>
         <RcAspectContainer className="rc-card" height={height} containerClasses={innerClasses}>

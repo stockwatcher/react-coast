@@ -41,7 +41,7 @@ var TestCards = React.createClass({
       <div className="row">
         <RcCard className="col s12 m6 l3">These cards maintain their aspect ratio.</RcCard>
         <RcCard className="col s12 m6 l3" height="50">You can modify the ratio with the 'height' property (in increments of 5 from 0 - 100 inclusive).</RcCard>
-        <RcCard className="col s12 m6 l3" innerClasses="padding-huge">Modifying 'innerClasses' property allows you to change the CSS of the inner container.</RcCard>
+        <RcCard className="col s12 m6 l3" innerClasses="rc-padding-huge">Modifying 'innerClasses' property allows you to change the CSS of the inner container.</RcCard>
         <RcCard className="col s12 m6 l3">Try viewing this page on different screen sizes to see how well these cards work with the grid!</RcCard>
       </div>
     )
