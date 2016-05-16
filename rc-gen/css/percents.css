@@ -2096,7 +2096,7 @@ ul {
 .z-depth-3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.z-depth-4, .modal, .confirm-modal {
+.z-depth-4, .modal {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 
 .z-depth-5 {
@@ -3104,7 +3104,7 @@ nav {
       display: inline-block;
       padding: 0 15px;
       cursor: pointer; }
-      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul .modal-footer a.submit-button, .modal-footer nav ul a.submit-button, nav ul .modal-footer a.close-button, .modal-footer nav ul a.close-button, nav ul a.btn-floating {
+      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
         margin-right: 15px; }
@@ -3442,7 +3442,7 @@ small {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .toast .btn, .toast .btn-large, .toast .btn-flat, .toast .modal-footer .submit-button, .modal-footer .toast .submit-button, .toast .modal-footer .close-button, .modal-footer .toast .close-button {
+  .toast .btn, .toast .btn-large, .toast .btn-flat {
     margin: 0;
     margin-left: 3rem; }
   .toast.rounded {
@@ -3539,9 +3539,7 @@ small {
   will-change: transform, opacity; }
 
 .btn, .btn-large,
-.btn-flat,
-.modal-footer .submit-button,
-.modal-footer .close-button {
+.btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -3588,9 +3586,7 @@ small {
 .btn i, .btn-large i,
 .btn-floating i,
 .btn-large i,
-.btn-flat i,
-.modal-footer .submit-button i,
-.modal-footer .close-button i {
+.btn-flat i {
   font-size: 1.3rem;
   line-height: inherit; }
 
@@ -3676,12 +3672,12 @@ button.btn-floating {
     .fixed-action-btn ul a.btn-floating {
       opacity: 0; }
 
-.btn-flat, .modal-footer .submit-button, .modal-footer .close-button {
+.btn-flat {
   box-shadow: none;
   background-color: transparent;
   color: #343434;
   cursor: pointer; }
-  .btn-flat.disabled, .modal-footer .disabled.submit-button, .modal-footer .disabled.close-button {
+  .btn-flat.disabled {
     color: #b3b3b3;
     cursor: default; }
 
@@ -3822,7 +3818,7 @@ button.btn-floating {
 a.waves-effect .waves-ripple {
   z-index: -1; }
 
-.modal, .confirm-modal {
+.modal {
   display: none;
   position: fixed;
   left: 0;
@@ -3836,21 +3832,21 @@ a.waves-effect .waves-ripple {
   border-radius: 2px;
   will-change: top, opacity; }
   @media only screen and (max-width: 992px) {
-    .modal, .confirm-modal {
+    .modal {
       width: 80%; } }
-  .modal h1, .confirm-modal h1, .modal h2, .confirm-modal h2, .modal h3, .confirm-modal h3, .modal h4, .confirm-modal h4 {
+  .modal h1, .modal h2, .modal h3, .modal h4 {
     margin-top: 0; }
-  .modal .modal-content, .confirm-modal .modal-content {
+  .modal .modal-content {
     padding: 24px; }
-  .modal .modal-close, .confirm-modal .modal-close {
+  .modal .modal-close {
     cursor: pointer; }
-  .modal .modal-footer, .confirm-modal .modal-footer {
+  .modal .modal-footer {
     border-radius: 0 0 2px 2px;
     background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
     width: 100%; }
-    .modal .modal-footer .btn, .confirm-modal .modal-footer .btn, .modal .modal-footer .btn-large, .confirm-modal .modal-footer .btn-large, .modal .modal-footer .btn-flat, .confirm-modal .modal-footer .btn-flat, .modal .modal-footer .submit-button, .confirm-modal .modal-footer .submit-button, .modal .modal-footer .close-button, .confirm-modal .modal-footer .close-button {
+    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
       float: right;
       margin: 6px 0; }
 
@@ -3867,21 +3863,21 @@ a.waves-effect .waves-ripple {
   display: none;
   will-change: opacity; }
 
-.modal.modal-fixed-footer, .modal-fixed-footer.confirm-modal {
+.modal.modal-fixed-footer {
   padding: 0;
   height: 70%; }
-  .modal.modal-fixed-footer .modal-content, .modal-fixed-footer.confirm-modal .modal-content {
+  .modal.modal-fixed-footer .modal-content {
     position: absolute;
     height: calc(100% - 56px);
     max-height: 100%;
     width: 100%;
     overflow-y: auto; }
-  .modal.modal-fixed-footer .modal-footer, .modal-fixed-footer.confirm-modal .modal-footer {
+  .modal.modal-fixed-footer .modal-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: 0; }
 
-.modal.bottom-sheet, .bottom-sheet.confirm-modal {
+.modal.bottom-sheet {
   top: auto;
   bottom: -100%;
   margin: 0;
@@ -5015,11 +5011,11 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 0 30px; }
     .side-nav a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
-    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button, .side-nav a.btn-floating {
+    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
       margin: 10px 15px; }
     .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {
       color: #fff; }
-    .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button {
+    .side-nav a.btn-flat {
       color: #343434; }
     .side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {
       background-color: #2bbbad; }
@@ -8258,7 +8254,7 @@ ul {
 .z-depth-3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.z-depth-4, .modal, .confirm-modal {
+.z-depth-4, .modal {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 
 .z-depth-5 {
@@ -9266,7 +9262,7 @@ nav {
       display: inline-block;
       padding: 0 15px;
       cursor: pointer; }
-      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul .modal-footer a.submit-button, .modal-footer nav ul a.submit-button, nav ul .modal-footer a.close-button, .modal-footer nav ul a.close-button, nav ul a.btn-floating {
+      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
         margin-right: 15px; }
@@ -9604,7 +9600,7 @@ small {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .toast .btn, .toast .btn-large, .toast .btn-flat, .toast .modal-footer .submit-button, .modal-footer .toast .submit-button, .toast .modal-footer .close-button, .modal-footer .toast .close-button {
+  .toast .btn, .toast .btn-large, .toast .btn-flat {
     margin: 0;
     margin-left: 3rem; }
   .toast.rounded {
@@ -9701,9 +9697,7 @@ small {
   will-change: transform, opacity; }
 
 .btn, .btn-large,
-.btn-flat,
-.modal-footer .submit-button,
-.modal-footer .close-button {
+.btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -9750,9 +9744,7 @@ small {
 .btn i, .btn-large i,
 .btn-floating i,
 .btn-large i,
-.btn-flat i,
-.modal-footer .submit-button i,
-.modal-footer .close-button i {
+.btn-flat i {
   font-size: 1.3rem;
   line-height: inherit; }
 
@@ -9838,12 +9830,12 @@ button.btn-floating {
     .fixed-action-btn ul a.btn-floating {
       opacity: 0; }
 
-.btn-flat, .modal-footer .submit-button, .modal-footer .close-button {
+.btn-flat {
   box-shadow: none;
   background-color: transparent;
   color: #343434;
   cursor: pointer; }
-  .btn-flat.disabled, .modal-footer .disabled.submit-button, .modal-footer .disabled.close-button {
+  .btn-flat.disabled {
     color: #b3b3b3;
     cursor: default; }
 
@@ -9984,7 +9976,7 @@ button.btn-floating {
 a.waves-effect .waves-ripple {
   z-index: -1; }
 
-.modal, .confirm-modal {
+.modal {
   display: none;
   position: fixed;
   left: 0;
@@ -9998,21 +9990,21 @@ a.waves-effect .waves-ripple {
   border-radius: 2px;
   will-change: top, opacity; }
   @media only screen and (max-width: 992px) {
-    .modal, .confirm-modal {
+    .modal {
       width: 80%; } }
-  .modal h1, .confirm-modal h1, .modal h2, .confirm-modal h2, .modal h3, .confirm-modal h3, .modal h4, .confirm-modal h4 {
+  .modal h1, .modal h2, .modal h3, .modal h4 {
     margin-top: 0; }
-  .modal .modal-content, .confirm-modal .modal-content {
+  .modal .modal-content {
     padding: 24px; }
-  .modal .modal-close, .confirm-modal .modal-close {
+  .modal .modal-close {
     cursor: pointer; }
-  .modal .modal-footer, .confirm-modal .modal-footer {
+  .modal .modal-footer {
     border-radius: 0 0 2px 2px;
     background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
     width: 100%; }
-    .modal .modal-footer .btn, .confirm-modal .modal-footer .btn, .modal .modal-footer .btn-large, .confirm-modal .modal-footer .btn-large, .modal .modal-footer .btn-flat, .confirm-modal .modal-footer .btn-flat, .modal .modal-footer .submit-button, .confirm-modal .modal-footer .submit-button, .modal .modal-footer .close-button, .confirm-modal .modal-footer .close-button {
+    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
       float: right;
       margin: 6px 0; }
 
@@ -10029,21 +10021,21 @@ a.waves-effect .waves-ripple {
   display: none;
   will-change: opacity; }
 
-.modal.modal-fixed-footer, .modal-fixed-footer.confirm-modal {
+.modal.modal-fixed-footer {
   padding: 0;
   height: 70%; }
-  .modal.modal-fixed-footer .modal-content, .modal-fixed-footer.confirm-modal .modal-content {
+  .modal.modal-fixed-footer .modal-content {
     position: absolute;
     height: calc(100% - 56px);
     max-height: 100%;
     width: 100%;
     overflow-y: auto; }
-  .modal.modal-fixed-footer .modal-footer, .modal-fixed-footer.confirm-modal .modal-footer {
+  .modal.modal-fixed-footer .modal-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: 0; }
 
-.modal.bottom-sheet, .bottom-sheet.confirm-modal {
+.modal.bottom-sheet {
   top: auto;
   bottom: -100%;
   margin: 0;
@@ -11177,11 +11169,11 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 0 30px; }
     .side-nav a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
-    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button, .side-nav a.btn-floating {
+    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
       margin: 10px 15px; }
     .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {
       color: #fff; }
-    .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button {
+    .side-nav a.btn-flat {
       color: #343434; }
     .side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {
       background-color: #2bbbad; }
@@ -14417,7 +14409,7 @@ ul {
 .z-depth-3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.z-depth-4, .modal, .confirm-modal {
+.z-depth-4, .modal {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 
 .z-depth-5 {
@@ -15425,7 +15417,7 @@ nav {
       display: inline-block;
       padding: 0 15px;
       cursor: pointer; }
-      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul .modal-footer a.submit-button, .modal-footer nav ul a.submit-button, nav ul .modal-footer a.close-button, .modal-footer nav ul a.close-button, nav ul a.btn-floating {
+      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
         margin-right: 15px; }
@@ -15763,7 +15755,7 @@ small {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .toast .btn, .toast .btn-large, .toast .btn-flat, .toast .modal-footer .submit-button, .modal-footer .toast .submit-button, .toast .modal-footer .close-button, .modal-footer .toast .close-button {
+  .toast .btn, .toast .btn-large, .toast .btn-flat {
     margin: 0;
     margin-left: 3rem; }
   .toast.rounded {
@@ -15860,9 +15852,7 @@ small {
   will-change: transform, opacity; }
 
 .btn, .btn-large,
-.btn-flat,
-.modal-footer .submit-button,
-.modal-footer .close-button {
+.btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -15909,9 +15899,7 @@ small {
 .btn i, .btn-large i,
 .btn-floating i,
 .btn-large i,
-.btn-flat i,
-.modal-footer .submit-button i,
-.modal-footer .close-button i {
+.btn-flat i {
   font-size: 1.3rem;
   line-height: inherit; }
 
@@ -15997,12 +15985,12 @@ button.btn-floating {
     .fixed-action-btn ul a.btn-floating {
       opacity: 0; }
 
-.btn-flat, .modal-footer .submit-button, .modal-footer .close-button {
+.btn-flat {
   box-shadow: none;
   background-color: transparent;
   color: #343434;
   cursor: pointer; }
-  .btn-flat.disabled, .modal-footer .disabled.submit-button, .modal-footer .disabled.close-button {
+  .btn-flat.disabled {
     color: #b3b3b3;
     cursor: default; }
 
@@ -16143,7 +16131,7 @@ button.btn-floating {
 a.waves-effect .waves-ripple {
   z-index: -1; }
 
-.modal, .confirm-modal {
+.modal {
   display: none;
   position: fixed;
   left: 0;
@@ -16157,21 +16145,21 @@ a.waves-effect .waves-ripple {
   border-radius: 2px;
   will-change: top, opacity; }
   @media only screen and (max-width: 992px) {
-    .modal, .confirm-modal {
+    .modal {
       width: 80%; } }
-  .modal h1, .confirm-modal h1, .modal h2, .confirm-modal h2, .modal h3, .confirm-modal h3, .modal h4, .confirm-modal h4 {
+  .modal h1, .modal h2, .modal h3, .modal h4 {
     margin-top: 0; }
-  .modal .modal-content, .confirm-modal .modal-content {
+  .modal .modal-content {
     padding: 24px; }
-  .modal .modal-close, .confirm-modal .modal-close {
+  .modal .modal-close {
     cursor: pointer; }
-  .modal .modal-footer, .confirm-modal .modal-footer {
+  .modal .modal-footer {
     border-radius: 0 0 2px 2px;
     background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
     width: 100%; }
-    .modal .modal-footer .btn, .confirm-modal .modal-footer .btn, .modal .modal-footer .btn-large, .confirm-modal .modal-footer .btn-large, .modal .modal-footer .btn-flat, .confirm-modal .modal-footer .btn-flat, .modal .modal-footer .submit-button, .confirm-modal .modal-footer .submit-button, .modal .modal-footer .close-button, .confirm-modal .modal-footer .close-button {
+    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
       float: right;
       margin: 6px 0; }
 
@@ -16188,21 +16176,21 @@ a.waves-effect .waves-ripple {
   display: none;
   will-change: opacity; }
 
-.modal.modal-fixed-footer, .modal-fixed-footer.confirm-modal {
+.modal.modal-fixed-footer {
   padding: 0;
   height: 70%; }
-  .modal.modal-fixed-footer .modal-content, .modal-fixed-footer.confirm-modal .modal-content {
+  .modal.modal-fixed-footer .modal-content {
     position: absolute;
     height: calc(100% - 56px);
     max-height: 100%;
     width: 100%;
     overflow-y: auto; }
-  .modal.modal-fixed-footer .modal-footer, .modal-fixed-footer.confirm-modal .modal-footer {
+  .modal.modal-fixed-footer .modal-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: 0; }
 
-.modal.bottom-sheet, .bottom-sheet.confirm-modal {
+.modal.bottom-sheet {
   top: auto;
   bottom: -100%;
   margin: 0;
@@ -17336,11 +17324,11 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 0 30px; }
     .side-nav a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
-    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button, .side-nav a.btn-floating {
+    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
       margin: 10px 15px; }
     .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {
       color: #fff; }
-    .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button {
+    .side-nav a.btn-flat {
       color: #343434; }
     .side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {
       background-color: #2bbbad; }
@@ -20664,7 +20652,7 @@ ul {
 .z-depth-3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.z-depth-4, .modal, .confirm-modal {
+.z-depth-4, .modal {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 
 .z-depth-5 {
@@ -21672,7 +21660,7 @@ nav {
       display: inline-block;
       padding: 0 15px;
       cursor: pointer; }
-      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul .modal-footer a.submit-button, .modal-footer nav ul a.submit-button, nav ul .modal-footer a.close-button, .modal-footer nav ul a.close-button, nav ul a.btn-floating {
+      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
         margin-right: 15px; }
@@ -22010,7 +21998,7 @@ small {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .toast .btn, .toast .btn-large, .toast .btn-flat, .toast .modal-footer .submit-button, .modal-footer .toast .submit-button, .toast .modal-footer .close-button, .modal-footer .toast .close-button {
+  .toast .btn, .toast .btn-large, .toast .btn-flat {
     margin: 0;
     margin-left: 3rem; }
   .toast.rounded {
@@ -22107,9 +22095,7 @@ small {
   will-change: transform, opacity; }
 
 .btn, .btn-large,
-.btn-flat,
-.modal-footer .submit-button,
-.modal-footer .close-button {
+.btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -22156,9 +22142,7 @@ small {
 .btn i, .btn-large i,
 .btn-floating i,
 .btn-large i,
-.btn-flat i,
-.modal-footer .submit-button i,
-.modal-footer .close-button i {
+.btn-flat i {
   font-size: 1.3rem;
   line-height: inherit; }
 
@@ -22244,12 +22228,12 @@ button.btn-floating {
     .fixed-action-btn ul a.btn-floating {
       opacity: 0; }
 
-.btn-flat, .modal-footer .submit-button, .modal-footer .close-button {
+.btn-flat {
   box-shadow: none;
   background-color: transparent;
   color: #343434;
   cursor: pointer; }
-  .btn-flat.disabled, .modal-footer .disabled.submit-button, .modal-footer .disabled.close-button {
+  .btn-flat.disabled {
     color: #b3b3b3;
     cursor: default; }
 
@@ -22390,7 +22374,7 @@ button.btn-floating {
 a.waves-effect .waves-ripple {
   z-index: -1; }
 
-.modal, .confirm-modal {
+.modal {
   display: none;
   position: fixed;
   left: 0;
@@ -22404,21 +22388,21 @@ a.waves-effect .waves-ripple {
   border-radius: 2px;
   will-change: top, opacity; }
   @media only screen and (max-width: 992px) {
-    .modal, .confirm-modal {
+    .modal {
       width: 80%; } }
-  .modal h1, .confirm-modal h1, .modal h2, .confirm-modal h2, .modal h3, .confirm-modal h3, .modal h4, .confirm-modal h4 {
+  .modal h1, .modal h2, .modal h3, .modal h4 {
     margin-top: 0; }
-  .modal .modal-content, .confirm-modal .modal-content {
+  .modal .modal-content {
     padding: 24px; }
-  .modal .modal-close, .confirm-modal .modal-close {
+  .modal .modal-close {
     cursor: pointer; }
-  .modal .modal-footer, .confirm-modal .modal-footer {
+  .modal .modal-footer {
     border-radius: 0 0 2px 2px;
     background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
     width: 100%; }
-    .modal .modal-footer .btn, .confirm-modal .modal-footer .btn, .modal .modal-footer .btn-large, .confirm-modal .modal-footer .btn-large, .modal .modal-footer .btn-flat, .confirm-modal .modal-footer .btn-flat, .modal .modal-footer .submit-button, .confirm-modal .modal-footer .submit-button, .modal .modal-footer .close-button, .confirm-modal .modal-footer .close-button {
+    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
       float: right;
       margin: 6px 0; }
 
@@ -22435,21 +22419,21 @@ a.waves-effect .waves-ripple {
   display: none;
   will-change: opacity; }
 
-.modal.modal-fixed-footer, .modal-fixed-footer.confirm-modal {
+.modal.modal-fixed-footer {
   padding: 0;
   height: 70%; }
-  .modal.modal-fixed-footer .modal-content, .modal-fixed-footer.confirm-modal .modal-content {
+  .modal.modal-fixed-footer .modal-content {
     position: absolute;
     height: calc(100% - 56px);
     max-height: 100%;
     width: 100%;
     overflow-y: auto; }
-  .modal.modal-fixed-footer .modal-footer, .modal-fixed-footer.confirm-modal .modal-footer {
+  .modal.modal-fixed-footer .modal-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: 0; }
 
-.modal.bottom-sheet, .bottom-sheet.confirm-modal {
+.modal.bottom-sheet {
   top: auto;
   bottom: -100%;
   margin: 0;
@@ -23583,11 +23567,11 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 0 30px; }
     .side-nav a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
-    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button, .side-nav a.btn-floating {
+    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
       margin: 10px 15px; }
     .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {
       color: #fff; }
-    .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button {
+    .side-nav a.btn-flat {
       color: #343434; }
     .side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {
       background-color: #2bbbad; }
@@ -26855,7 +26839,7 @@ ul {
 .z-depth-3 {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.z-depth-4, .modal, .confirm-modal {
+.z-depth-4, .modal {
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 
 .z-depth-5 {
@@ -27863,7 +27847,7 @@ nav {
       display: inline-block;
       padding: 0 15px;
       cursor: pointer; }
-      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul .modal-footer a.submit-button, .modal-footer nav ul a.submit-button, nav ul .modal-footer a.close-button, .modal-footer nav ul a.close-button, nav ul a.btn-floating {
+      nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
         margin-top: -2px;
         margin-left: 15px;
         margin-right: 15px; }
@@ -28201,7 +28185,7 @@ small {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .toast .btn, .toast .btn-large, .toast .btn-flat, .toast .modal-footer .submit-button, .modal-footer .toast .submit-button, .toast .modal-footer .close-button, .modal-footer .toast .close-button {
+  .toast .btn, .toast .btn-large, .toast .btn-flat {
     margin: 0;
     margin-left: 3rem; }
   .toast.rounded {
@@ -28298,9 +28282,7 @@ small {
   will-change: transform, opacity; }
 
 .btn, .btn-large,
-.btn-flat,
-.modal-footer .submit-button,
-.modal-footer .close-button {
+.btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -28347,9 +28329,7 @@ small {
 .btn i, .btn-large i,
 .btn-floating i,
 .btn-large i,
-.btn-flat i,
-.modal-footer .submit-button i,
-.modal-footer .close-button i {
+.btn-flat i {
   font-size: 1.3rem;
   line-height: inherit; }
 
@@ -28435,12 +28415,12 @@ button.btn-floating {
     .fixed-action-btn ul a.btn-floating {
       opacity: 0; }
 
-.btn-flat, .modal-footer .submit-button, .modal-footer .close-button {
+.btn-flat {
   box-shadow: none;
   background-color: transparent;
   color: #343434;
   cursor: pointer; }
-  .btn-flat.disabled, .modal-footer .disabled.submit-button, .modal-footer .disabled.close-button {
+  .btn-flat.disabled {
     color: #b3b3b3;
     cursor: default; }
 
@@ -28581,7 +28561,7 @@ button.btn-floating {
 a.waves-effect .waves-ripple {
   z-index: -1; }
 
-.modal, .confirm-modal {
+.modal {
   display: none;
   position: fixed;
   left: 0;
@@ -28595,21 +28575,21 @@ a.waves-effect .waves-ripple {
   border-radius: 2px;
   will-change: top, opacity; }
   @media only screen and (max-width: 992px) {
-    .modal, .confirm-modal {
+    .modal {
       width: 80%; } }
-  .modal h1, .confirm-modal h1, .modal h2, .confirm-modal h2, .modal h3, .confirm-modal h3, .modal h4, .confirm-modal h4 {
+  .modal h1, .modal h2, .modal h3, .modal h4 {
     margin-top: 0; }
-  .modal .modal-content, .confirm-modal .modal-content {
+  .modal .modal-content {
     padding: 24px; }
-  .modal .modal-close, .confirm-modal .modal-close {
+  .modal .modal-close {
     cursor: pointer; }
-  .modal .modal-footer, .confirm-modal .modal-footer {
+  .modal .modal-footer {
     border-radius: 0 0 2px 2px;
     background-color: #fafafa;
     padding: 4px 6px;
     height: 56px;
     width: 100%; }
-    .modal .modal-footer .btn, .confirm-modal .modal-footer .btn, .modal .modal-footer .btn-large, .confirm-modal .modal-footer .btn-large, .modal .modal-footer .btn-flat, .confirm-modal .modal-footer .btn-flat, .modal .modal-footer .submit-button, .confirm-modal .modal-footer .submit-button, .modal .modal-footer .close-button, .confirm-modal .modal-footer .close-button {
+    .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
       float: right;
       margin: 6px 0; }
 
@@ -28626,21 +28606,21 @@ a.waves-effect .waves-ripple {
   display: none;
   will-change: opacity; }
 
-.modal.modal-fixed-footer, .modal-fixed-footer.confirm-modal {
+.modal.modal-fixed-footer {
   padding: 0;
   height: 70%; }
-  .modal.modal-fixed-footer .modal-content, .modal-fixed-footer.confirm-modal .modal-content {
+  .modal.modal-fixed-footer .modal-content {
     position: absolute;
     height: calc(100% - 56px);
     max-height: 100%;
     width: 100%;
     overflow-y: auto; }
-  .modal.modal-fixed-footer .modal-footer, .modal-fixed-footer.confirm-modal .modal-footer {
+  .modal.modal-fixed-footer .modal-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: 0; }
 
-.modal.bottom-sheet, .bottom-sheet.confirm-modal {
+.modal.bottom-sheet {
   top: auto;
   bottom: -100%;
   margin: 0;
@@ -29774,11 +29754,11 @@ input[type=range]:focus::-ms-fill-upper {
     padding: 0 30px; }
     .side-nav a:hover {
       background-color: rgba(0, 0, 0, 0.05); }
-    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button, .side-nav a.btn-floating {
+    .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-flat, .side-nav a.btn-floating {
       margin: 10px 15px; }
     .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {
       color: #fff; }
-    .side-nav a.btn-flat, .side-nav .modal-footer a.submit-button, .modal-footer .side-nav a.submit-button, .side-nav .modal-footer a.close-button, .modal-footer .side-nav a.close-button {
+    .side-nav a.btn-flat {
       color: #343434; }
     .side-nav a.btn:hover, .side-nav a.btn-large:hover, .side-nav a.btn-large:hover {
       background-color: #2bbbad; }
@@ -30931,9 +30911,166 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   border-radius: 16px;
   display: inline-block; }
 
-.rc-collapse-height {
-  height: 0;
-  margin: 0;
-  padding: 0; }
+.rc-width-0 {
+  width: 0%; }
 
-/*# sourceMappingURL=modal.css.map */
+.rc-width-5 {
+  width: 5%; }
+
+.rc-width-10 {
+  width: 10%; }
+
+.rc-width-15 {
+  width: 15%; }
+
+.rc-width-20 {
+  width: 20%; }
+
+.rc-width-25 {
+  width: 25%; }
+
+.rc-width-30 {
+  width: 30%; }
+
+.rc-width-35 {
+  width: 35%; }
+
+.rc-width-40 {
+  width: 40%; }
+
+.rc-width-45 {
+  width: 45%; }
+
+.rc-width-50 {
+  width: 50%; }
+
+.rc-width-55 {
+  width: 55%; }
+
+.rc-width-60 {
+  width: 60%; }
+
+.rc-width-65 {
+  width: 65%; }
+
+.rc-width-70 {
+  width: 70%; }
+
+.rc-width-75 {
+  width: 75%; }
+
+.rc-width-80 {
+  width: 80%; }
+
+.rc-width-85 {
+  width: 85%; }
+
+.rc-width-90 {
+  width: 90%; }
+
+.rc-width-95 {
+  width: 95%; }
+
+.rc-width-100 {
+  width: 100%; }
+
+.rc-margin-slim {
+  margin: 1px; }
+
+.rc-padding-slim {
+  padding: 1px; }
+
+.rc-margin-thin {
+  margin: 2px; }
+
+.rc-padding-thin {
+  padding: 2px; }
+
+.rc-margin-normal {
+  margin: 4px; }
+
+.rc-padding-normal {
+  padding: 4px; }
+
+.rc-margin-thick {
+  margin: 8px; }
+
+.rc-padding-thick {
+  padding: 8px; }
+
+.rc-margin-fat {
+  margin: 12px; }
+
+.rc-padding-fat {
+  padding: 12px; }
+
+.rc-margin-huge {
+  margin: 16px; }
+
+.rc-padding-huge {
+  padding: 16px; }
+
+.rc-aspect-container-dummy-0 {
+  margin-top: 0%; }
+
+.rc-aspect-container-dummy-5 {
+  margin-top: 5%; }
+
+.rc-aspect-container-dummy-10 {
+  margin-top: 10%; }
+
+.rc-aspect-container-dummy-15 {
+  margin-top: 15%; }
+
+.rc-aspect-container-dummy-20 {
+  margin-top: 20%; }
+
+.rc-aspect-container-dummy-25 {
+  margin-top: 25%; }
+
+.rc-aspect-container-dummy-30 {
+  margin-top: 30%; }
+
+.rc-aspect-container-dummy-35 {
+  margin-top: 35%; }
+
+.rc-aspect-container-dummy-40 {
+  margin-top: 40%; }
+
+.rc-aspect-container-dummy-45 {
+  margin-top: 45%; }
+
+.rc-aspect-container-dummy-50 {
+  margin-top: 50%; }
+
+.rc-aspect-container-dummy-55 {
+  margin-top: 55%; }
+
+.rc-aspect-container-dummy-60 {
+  margin-top: 60%; }
+
+.rc-aspect-container-dummy-65 {
+  margin-top: 65%; }
+
+.rc-aspect-container-dummy-70 {
+  margin-top: 70%; }
+
+.rc-aspect-container-dummy-75 {
+  margin-top: 75%; }
+
+.rc-aspect-container-dummy-80 {
+  margin-top: 80%; }
+
+.rc-aspect-container-dummy-85 {
+  margin-top: 85%; }
+
+.rc-aspect-container-dummy-90 {
+  margin-top: 90%; }
+
+.rc-aspect-container-dummy-95 {
+  margin-top: 95%; }
+
+.rc-aspect-container-dummy-100 {
+  margin-top: 100%; }
+
+/*# sourceMappingURL=percents.css.map */

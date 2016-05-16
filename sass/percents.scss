@@ -1,0 +1,26 @@
+
+@import '../node_modules/palette-css/sass/palette.scss';
+
+@for $i from 0 through 20 {
+  $width: $i * 5;
+  .rc-width-#{$width} {
+    width: percentage($width / 100.0);
+  }
+}
+
+@each $name, $margin in $margins {
+  .rc-margin-#{$name} {
+    margin: $margin;
+  }
+  .rc-padding-#{$name} {
+    padding: $margin;
+  }
+}
+
+@for $i from 0 through 20 {
+  $margintop: $i * 5;
+  .rc-aspect-container-dummy-#{$margintop} {
+    margin-top: percentage($margintop / 100.0);
+  }
+}
+

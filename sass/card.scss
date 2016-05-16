@@ -1,0 +1,32 @@
+
+@import 'common';
+@import 'percents.scss';
+
+.rc-aspect-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+}
+.rc-aspect-container-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.rc-card-container {
+  display: inline-block;
+}
+.rc-card {
+  @extend .grey, .lighten-4;
+  @extend .z-depth-1;
+  display: inline-block;
+  width: 100%;
+}
+
+.my-card-container {
+  padding: 0 10px 10px 10px !important;
+}
+
