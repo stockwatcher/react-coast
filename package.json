@@ -1,7 +1,7 @@
 {
   "name": "react-coast",
   "description": "React COAST - React COmponents And Sensible Templates",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/stockwatcher/react-coast.git"
