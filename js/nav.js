@@ -1,5 +1,7 @@
 
-window.RcFooter = React.createClass({
+var React = require('react');
+
+var RcFooter = React.createClass({
   render: function() {
     return (
       <div className="rc-footer">
@@ -14,4 +16,10 @@ window.RcFooter = React.createClass({
     )
   }
 });
+
+window.RcFooter = RcFooter;
+
+module.exports = {
+  RcFooter: RcFooter,
+};
 

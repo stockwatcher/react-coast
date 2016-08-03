@@ -1,5 +1,7 @@
 
-window.RcAspectContainer = React.createClass({
+var React = require('react');
+
+var RcAspectContainer = React.createClass({
   render: function() {
     var containerClasses =        'rc-aspect-container ' +          this.props.className;
     var dummyClasses =            'rc-aspect-container-dummy-' +    this.props.height;
@@ -18,7 +20,7 @@ window.RcAspectContainer = React.createClass({
   }
 });
 
-window.RcCard = React.createClass({
+var RcCard = React.createClass({
   render: function() {
     var containerClasses = 'rc-card-container ' + (this.props.className || 'rc-width-100');
     var height = this.props.height || "100";
@@ -33,3 +35,10 @@ window.RcCard = React.createClass({
   }
 });
 
+window.RcAspectContainer = RcAspectContainer;
+window.RcCard = RcCard;
+
+module.exports = {
+  RcAspectContainer: RcAspectContainer,
+  RcCard: RcCard,
+}

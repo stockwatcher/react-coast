@@ -1,4 +1,7 @@
 
+var React = require('react');
+var ReactDOM = require('react-dom');
+
 /**
  * @state {
  *  visible: boolean
@@ -66,7 +69,7 @@ var BaseModalMixin = {
  * @prop texts: (see BasicConfirmModalContent)
  * @prop next(): (see BasicConfirmModalContent)
  */
-window.BasicConfirmModal = React.createClass({
+var BasicConfirmModal = React.createClass({
   mixins: [BaseModalMixin],
   onClose: function() {
     // Do nothing
@@ -91,7 +94,7 @@ window.BasicConfirmModal = React.createClass({
  * }
  * @prop next(): Function to execute on submit.
  */
-window.BasicConfirmModalContent = React.createClass({
+var BasicConfirmModalContent = React.createClass({
   handleSubmit: function(event) {
     event.preventDefault();
     this.props.modal.close();
@@ -120,7 +123,7 @@ window.BasicConfirmModalContent = React.createClass({
  * @prop closeText: string
  * @prop onClose: callback after close
  */
-window.BasicModalFooter = React.createClass({
+var BasicModalFooter = React.createClass({
   render: function() {
     return (
       <div className="modal-footer">
@@ -130,4 +133,14 @@ window.BasicModalFooter = React.createClass({
     )
   }
 });
+
+window.BasicConfirmModal = BasicConfirmModal;
+window.BasicConfirmModalContent = BasicConfirmModalContent;
+window.BasicModalFooter = BasicModalFooter;
+
+module.exports = {
+  BasicConfirmModal: BasicConfirmModal,
+  BasicConfirmModalContent: BasicConfirmModalContent,
+  BasicModalFooter: BasicModalFooter,
+};
 

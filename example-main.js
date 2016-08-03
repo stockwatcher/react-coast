@@ -1,4 +1,11 @@
 
+var React = require('react');
+var ReactDOM = require('react-dom');
+
+var RcCard = require('./js/card').RcCard;
+var BasicConfirmModal = require('./js/modal').BasicConfirmModal;
+var RcFooter = require('./js/nav').RcFooter;
+
 var TestButtons = React.createClass({
   getInitialState: function() {
     return {
