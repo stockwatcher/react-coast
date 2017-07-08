@@ -36,13 +36,14 @@ var BaseModalMixin = {
     var self = this,
         $element = $(ReactDOM.findDOMNode(this));
     if (self.state.visible) {
-      $element.openModal({
+      $element.modal({
         complete: function() {
           self.state.close();
         }
       });
+      $element.modal('open');
     } else {
-      $element.closeModal();
+      $element.modal('close');
     }
   },
   componentDidMount: function() {
