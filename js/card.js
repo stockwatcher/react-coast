@@ -35,8 +35,10 @@ var RcCard = React.createClass({
   }
 });
 
-window.RcAspectContainer = RcAspectContainer;
-window.RcCard = RcCard;
+if (typeof window !== 'undefined') {
+  window.RcAspectContainer = RcAspectContainer;
+  window.RcCard = RcCard;
+}
 
 module.exports = {
   RcAspectContainer: RcAspectContainer,

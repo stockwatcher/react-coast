@@ -17,7 +17,9 @@ var RcFooter = React.createClass({
   }
 });
 
-window.RcFooter = RcFooter;
+if (typeof window !== 'undefined') {
+  window.RcFooter = RcFooter;
+}
 
 module.exports = {
   RcFooter: RcFooter,

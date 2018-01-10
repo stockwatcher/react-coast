@@ -1,18 +1,18 @@
 {
   "name": "react-coast",
   "description": "React COAST - React COmponents And Sensible Templates",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/stockwatcher/react-coast.git"
   },
   "dependencies": {
-    "express": "4.x",
-    "react": "15.x",
-    "react-dom": "15.x",
+    "express": "^4.16.2",
     "jquery": "3.x",
-    "palette-css": "git://github.com/stockwatcher/palette-css.git#master"
+    "palette-css": "git://github.com/stockwatcher/palette-css.git#master",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
   },
   "devDependencies": {
     "watchify": "3.x",
@@ -21,6 +21,16 @@
     "babel-preset-react": "6.x"
   },
   "browserify": {
-    "transform": [[ "babelify", {"presets": ["es2015", "react"]} ]]
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
+    ]
   }
 }

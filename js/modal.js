@@ -135,9 +135,11 @@ var BasicModalFooter = React.createClass({
   }
 });
 
-window.BasicConfirmModal = BasicConfirmModal;
-window.BasicConfirmModalContent = BasicConfirmModalContent;
-window.BasicModalFooter = BasicModalFooter;
+if (typeof window !== 'undefined') {
+  window.BasicConfirmModal = BasicConfirmModal;
+  window.BasicConfirmModalContent = BasicConfirmModalContent;
+  window.BasicModalFooter = BasicModalFooter;
+}
 
 module.exports = {
   BasicConfirmModal: BasicConfirmModal,
